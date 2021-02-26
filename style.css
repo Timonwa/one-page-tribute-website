@@ -1,9 +1,41 @@
+/* root folder */
+:root{
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+}
+/* all headers settings */
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 1rem 0 0;
+}
+h1{
+  font-size: 1.95rem;
+}
+h2{
+  font-size: 1.55rem;
+}
+h3{
+  font-size: 1.25rem;
+}
+h4{
+  font-size: 1rem;
+}
+h5{
+  font-size: 0.8rem;
+}
+h6{
+  font-size: 0.65rem;
+}
+/* all section paragraphs */
+p {
+  padding-bottom: 1rem;
+}
 /* body tag */
 body {
-  margin: 0 0 0.08rem;
-  font-size: 24px;
-  text-align: center;
-  background-image: linear-gradient(
+  background-image: linear-gradient(45deg,
     rgba(255, 192, 203, 0.507) 10%,
     pink 50%,
     #7474d1 60%,
@@ -11,13 +43,13 @@ body {
     white
   );
   background-repeat: no-repeat;
-  margin: 2rem;
-  border: solid grey 2px;
+  margin: 3rem 5rem;
+  box-shadow: 0px 0px 2px 2px grey;
 }
 /* body div */
 #body {
-  background-color: rgba(255, 255, 255, 0.185);
-  padding: 1.2rem 1.6rem;
+  background-color: rgba(71, 71, 71, 0.219);
+  padding: 3rem 5rem;
 }
 /* title of the page */
 #title {
@@ -28,6 +60,9 @@ div {
   border-bottom: solid grey 1px;
 }
 /* image of the tribute person */
+#img-div{
+  padding: 1rem;
+}
 #img {
   border: solid grey 1px;
   max-width: 100%;
@@ -37,42 +72,73 @@ div {
   font-size: 0.8rem;
   font-weight: bold;
 }
-h3 {
-  margin-bottom: 0;
-}
-/* all section paragraphs */
-p {
-  margin-top: 0.16rem;
-}
 /* list styles */
 ul {
   list-style: none;
-  margin-top: 0.16rem;
+  padding-bottom: 1rem;
 }
 a {
   text-decoration: none;
 }
+/* table */
 #table {
+  align-content: center;
   border: none;
+  padding: 1rem;
 }
 table {
   background-color: rgba(133, 119, 119, 0.26);
-  padding: 0.4rem 0.8rem;
-  margin: 0.5rem 0 1rem;
+  padding: 1rem;
+}
+td{
+  text-align: left;
+  padding-left: 1rem;
 }
 .td-hdr {
+  padding-left: 0rem;
+  text-align: center;
   font-weight: bold;
 }
 /* more info links */
 #more-info {
-  margin: 1.2rem 0 0;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
-
+/* footer */
 footer,
 footer>p {
   font-weight: bold;
   font-size: 0.7rem;
-  margin: 0.5rem 0 0;
-  padding: 0;
+  padding-top: 0.5rem;
+}
+/* links */
+a:visited{
+  color: blue;
+}
+
+/* media query */
+@media screen and (max-width: 800px) {
+  :root{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  body{
+    margin: 2rem 3rem;
+    
+  }
+  #body{
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  :root{
+    font-size: 16px;
+    line-height: 19px;
+  }
+  body{
+    margin: 1rem 1rem;
+    
+  }
+  #body{
+    padding: 1rem 1rem;
+  }
 }
